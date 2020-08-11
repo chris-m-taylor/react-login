@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-
-
-const users = {
-    username: 'Jeff123',
-    password: 'supersecret'
-};
-
-
+import {users} from './users';
 
 
 class Login extends Component {
@@ -25,11 +18,13 @@ class Login extends Component {
     }
 
     onSubmit = () => {
-
-        if (this.state.username === users.username){
-            this.setState({valid: true})
+        for (const user of users){
+            if (this.state.username.toLowerCase() === user.username.toLowerCase() && this.state.password === user.password){
+                
+                this.setState({valid: true});
+                break;
+            }
         }
-            
     };
 
     inputChange = (event) => {
@@ -37,7 +32,6 @@ class Login extends Component {
     }
 
     render() {
-
         if (this.state.valid){
             return this.props.children;
         }
@@ -64,9 +58,6 @@ class Login extends Component {
                 </div>
             );
         }
-        
     }
 }
-
-
 export default Login;
