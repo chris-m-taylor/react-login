@@ -1,7 +1,22 @@
-Accepted username is Jeff123
-leave password blank
+# How to use?
+Click on the website link under description!
 
+### Credentials to test out App
+#### These are all of the current accepted logins
+   
+   username: Jeff123  
+   password: supersecret  
+   
+   username: JoshIsCool  
+   password: passwordIsCool  
 
+   username: ChrisIsCooler  
+   password: passwordIsCooler  
+   
+   username: ZebraFan  
+   password: secretzebras  
+
+#
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
