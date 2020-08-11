@@ -6,7 +6,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Login>
+      <h1>Simple Login Page</h1>
+      <Login className="login">
         <Content />
       </Login>
     </div>
