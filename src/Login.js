@@ -36,6 +36,29 @@ class Login extends Component {
             return this.props.children;
         }
         else{
+            if (this.state.username === '' || this.state.password === ''){
+                return(<div>
+                    <form onSubmit={this.handleSubmit}>
+                        <p>
+                            <input 
+                            type="text"
+                            placeholder="username" 
+                            onChange={this.inputChange}>
+                            </input>
+                        </p>
+                        <p>
+                            <input 
+                            type="password"
+                            placeholder="password" 
+                            onChange={this.inputChange}>
+                            </input>
+                        </p>
+                        <p><button type="submit" onClick={this.handleSubmit}>Submit</button></p>
+                    </form>
+                    <p>Please enter a username and password</p>
+                </div>
+                )
+            }
             return(
                 <div>
                     <form onSubmit={this.handleSubmit}>
@@ -48,7 +71,7 @@ class Login extends Component {
                         </p>
                         <p>
                             <input 
-                            type="text" 
+                            type="password" 
                             placeholder="password" 
                             onChange={this.inputChange}>
                             </input>
@@ -56,6 +79,7 @@ class Login extends Component {
                         <p><button type="submit" onClick={this.handleSubmit}>Submit</button></p>
                     </form>
                 </div>
+                
             );
         }
     }
