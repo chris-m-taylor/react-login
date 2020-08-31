@@ -1,7 +1,7 @@
 # How to use?
 Click on the website link under description!
 
-### Credentials to test out App
+### Credentials to test our App
 #### These are all of the current accepted logins
    
    username: Jeff123  
